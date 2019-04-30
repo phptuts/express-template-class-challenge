@@ -1,0 +1,16 @@
+<%- include('header') %> 
+
+<h1>User Names</h1>
+<p>A list of users entered</p>
+
+<% if (usernames.length > 0) { %>
+    <ul>
+        <% usernames.forEach(username => { %>
+            <li><%=  username %></li>
+        <% }) %>    
+    </ul>
+    <% } else { %>
+        <p>No users entered. </p>
+<% } %>
+
+<%- include('footer') %>

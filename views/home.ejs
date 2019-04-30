@@ -1,0 +1,12 @@
+<%- include('header') %> 
+
+<h1>Home</h1>
+<p>Enter Usernames here:</p>
+
+<form action="/add-user" method="POST"> 
+    <label for="user-name">Username:</label>
+    <input type="text" name="username" id="user-name" />
+    <button type="submit">Submit User</button>
+</form>
+
+<%- include('footer') %>
